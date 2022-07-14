@@ -1,0 +1,36 @@
+package question02;
+
+import java.util.Scanner;
+
+public class Fibonacci {
+	   
+	    	private Integer n;
+	    	
+	    	
+	   public Fibonacci(Integer n) {
+				super();
+				this.n = n;
+			}
+	   
+	public Integer getN() {
+		return n;
+	}
+
+	public void setN(Integer n) {
+		this.n = n;
+	}
+
+	public int fibo(int n) {
+	   			int n1 = 0;
+	   			int n2 =1;
+	   			int n3 =0;
+	    	for (i = 0; i < 30; i++) {
+	            System.out.println(n1);
+	        }
+	    	sc.close();
+
+	    }
+
+	}
+
+

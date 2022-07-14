@@ -1,0 +1,42 @@
+package question02;
+
+public class Fibonacci {
+
+	private Integer n;
+
+	public Fibonacci(Integer n) {
+		super();
+		this.n = n;
+	}
+
+	public Integer getN() {
+		return n;
+	}
+
+	public void setN(Integer n) {
+		this.n = n;
+	}
+
+	public String fibo(int n) {
+		int n1 = 0;
+		int n2 = 1;
+		int n3 = 0;
+		while (n > n3) {
+			n3 = n1 + n2;
+			n1 = n2;
+			n2 = n3;
+		}
+		String string;
+		if(n==0) {
+			string = "O número 0 está na sequência de Fibonacci. /nO próximo número é: 1";
+		}else if(n==n3){
+			string = "O número " + n +" está na sequência de Fibonacci. /nO próximo número é:" + (n1 +n);
+		}else {
+			string = "Este número não pertence a sequência de Fibonacci";
+		}
+		return string;
+		
+
+	}
+
+}

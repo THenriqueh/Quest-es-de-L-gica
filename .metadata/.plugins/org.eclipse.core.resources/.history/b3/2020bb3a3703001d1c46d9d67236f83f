@@ -1,0 +1,19 @@
+package question02;
+
+public class Fibonacci {
+
+	 public static long fibo(int n) {
+		 
+		 	int result;
+	        if (n < 2) {
+	           result = n;
+	        } else {
+	        	
+	          result = (int) (fibo(n - 1) + fibo(n - 2));
+	        }
+	        return result;
+	    }
+	    
+	}
+
+

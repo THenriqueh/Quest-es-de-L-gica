@@ -1,0 +1,35 @@
+package question02;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Digite quantidade de termos que será impresso (1 a 50): ");
+		int nVect = sc.nextInt();
+		System.out.print("Digite um número para saber se pertence ou não a sequência de Fibonati: ");
+		int n = sc.nextInt();
+		int vect[] = new int[nVect];
+
+		for (int i = 0; i < nVect; i++) {
+			System.out.print(Fibonacci.fibo(i) + ", ");
+		}
+		Integer pertence = 0;
+		for (int i = 1; i < nVect; i++) {
+			if (vect[i] == n) {
+			pertence = i;	
+			} 
+		}
+		System.out.println();
+		if(pertence != null) {
+		System.out.println("O número" + pertence +" pertence a Sequencia de Fibonacci.");
+		
+		}else {
+		System.out.println("Esse número não pertence a Sequencia de Fibonacci.");
+		}
+		sc.close();
+
+
+	}
+}

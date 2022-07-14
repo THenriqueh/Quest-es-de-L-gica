@@ -1,0 +1,24 @@
+package question02;
+
+import java.util.Scanner;
+
+public class Fibonacci2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int a = 1;
+		int b = 0;
+		int aux;
+		int n;
+		Fibonacci fibo = new Fibonacci(n);
+		for (int i=0;i<n;i++) {
+			System.out.println(a);
+			aux = a;
+			a = a + b;
+			b = aux;
+		}
+		sc.close();
+	}
+
+}
